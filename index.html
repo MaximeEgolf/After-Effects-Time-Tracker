@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Time Tracker</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="panel">
+    <div class="eyebrow">CURRENT PROJECT</div>
+    <div id="project" class="project">Checking project…</div>
+    <div id="elapsed" class="elapsed">00:00:00</div>
+    <div class="caption">TOTAL TRACKED TIME</div>
+    <div class="rule"></div>
+    <div class="row"><span>Status</span><strong id="status">Starting…</strong></div>
+    <div class="row"><span>Idle timeout</span><strong>5 minutes</strong></div>
+    <div class="footer" id="message">Open once per After Effects session; tracking continues when closed.</div>
+  </main>
+  <script src="js/CSInterface.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

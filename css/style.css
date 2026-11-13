@@ -1,0 +1,15 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: #202124; color: #f1f1f1;
+  font-family: Arial, sans-serif; font-size: 12px; }
+.panel { padding: 16px; }
+.eyebrow, .caption { color: #92959c; font-size: 10px; letter-spacing: 1px; }
+.project { margin-top: 8px; color: #d6d7db; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.elapsed { margin-top: 12px; font-size: 34px; font-weight: 600; font-variant-numeric: tabular-nums; letter-spacing: -1px; }
+.caption { margin-top: 2px; }
+.rule { height: 1px; background: #3b3d42; margin: 15px 0 11px; }
+.row { display: flex; justify-content: space-between; margin: 8px 0; color: #aeb0b6; }
+.row strong { color: #f1f1f1; font-weight: 500; }
+#status.running { color: #73d69a; }
+#status.idle { color: #e5bd68; }
+#status.stopped { color: #aeb0b6; }
+.footer { color: #777b83; font-size: 10px; margin-top: 14px; }
