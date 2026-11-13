@@ -16,10 +16,12 @@
   function $(id) { return document.getElementById(id); }
   function formatTime(seconds) {
     seconds = Math.max(0, Math.floor(seconds));
-    var h = Math.floor(seconds / 3600);
+    var d = Math.floor(seconds / 86400);
+    var h = Math.floor((seconds % 86400) / 3600);
     var m = Math.floor((seconds % 3600) / 60);
-    var s = seconds % 60;
-    return [h, m, s].map(function (v) { return String(v).padStart(2, "0"); }).join(":");
+    return [d, h, m].map(function (v, i) {
+      return i === 0 ? String(v) : String(v).padStart(2, "0");
+    }).join(":");
   }
   function startIdleHelper() {
     if (!fs.existsSync(helperExe)) {
